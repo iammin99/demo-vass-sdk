@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright  © VASS. All rights reserved
+  ~ Author: chumin99 on 6/3/21, 10:31 AM
+  -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame_custom_toast"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_custom_toast"
+    android:elevation="1dp"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="20dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_mess_custom_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:textColor="#575757"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibn_close_custom_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_close_24"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_mess_custom_toast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_mess_custom_toast"
+        app:layout_constraintTop_toTopOf="@+id/txt_mess_custom_toast" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,2 @@
+rootProject.name = "Vass Sdk Demo"
+include ':app'
